@@ -1,0 +1,235 @@
+/* font-family: "Nunito", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Nunito", sans-serif;
+}
+.banner{
+  padding: 40px 0;
+}
+.navbar-brand{
+  text-transform: uppercase;
+  font-size: 42px;
+}
+.navbar-brand:hover{
+  color: transparent;
+}
+.banner h1{
+    font-size: 50px;
+    line-height: 145%;
+    font-weight: 600;
+    transform: rotate(3deg);
+}
+.gradiant_text{
+  
+}
+
+.banner p{
+  
+color: #000;
+  
+font-size: 30px;
+  
+line-height: 145%;
+  
+font-weight: 500;
+  
+margin-top: 10px;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .gradiant_text {
+    background-image: linear-gradient(
+      to right,
+      rgba(115, 0, 0, 1),
+      rgba(128, 0, 255, 1),
+       rgba(115, 0, 0, 1),
+       rgba(175, 140, 0, 1),
+       rgba(0, 255, 140, 1),
+       rgba(0, 59, 142, 1)
+      /* #f6ee00,
+      #007aff,
+      #14f339,
+      #ff6262,
+      #f6ee00,
+      #007aff,
+      #14f339 */
+    );
+
+    /* padding: 1rem;
+    border: 20px solid rgb(255 255 255 / 50%);
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box; */
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    --bg-size: 200%;
+    color: transparent;
+    background-size: var(--bg-size);
+    /* animation: animate 2s steps(5) infinite; */
+    animation: animate 4s linear infinite;
+    animation-direction: reverse;
+    /* animation: animate 2s ease infinite; */
+  }
+
+  @keyframes animate {
+    0%{
+      background-position: 0;
+    }
+    100% {
+      background-position: var(--bg-size);
+    }
+  }
+}
+
+
+.portfolio{
+
+}
+.portfoli_box{
+  background: #FFFAF8;
+  
+  padding: 50px;
+  padding-bottom: 0;
+  border-radius: 16px;
+  box-shadow: 0 1px 5.2px -1.65px rgba(0, 0, 0, 0.25);
+}
+.portfoli_box h2{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 145%;
+}
+.portfoli_box p{
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+}
+.portfoli_box a{
+  margin-bottom: 24px;
+  padding: 0
+}
+.portfoli_box .image{
+  text-align: center
+}
+.box_item_two{
+  background: linear-gradient(180deg, rgba(254, 253, 255, 1) 0%, #EDC0FF 100%);
+  transform: rotate(1deg);
+}
+.box_item_three{
+  background: linear-gradient(180deg, rgba(255, 250, 248, 1) 0%, rgba(199, 213, 255, 1) 100%);
+  transform: rotate(-2deg);
+}
+.box_item_four{
+  background: linear-gradient(180deg, rgba(255, 254, 239, 1) 0%, rgba(255, 228, 156, 1) 100%);
+  transform: rotate(3deg);
+  margin-top: 20px;
+}
+
+.mentions_section{
+  text-align: center;
+  padding: 100px 0;
+}
+.mentions_section h2, footer h2{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 145%;
+}
+.mentions_section p, footer p{
+    font-size: 30px;
+    line-height: 145%;
+    font-weight: 500;
+}
+
+.logos{
+  
+display: flex;
+  
+flex-wrap: wrap;
+}
+.logo_box{
+  border-radius: 20px;
+  box-shadow: 0 1px 5.2px -1.65px rgba(0, 0, 0, 0.25);
+  padding: 90px 100px;
+  margin: 14px;
+  border: .80px solid rgba(181, 181, 181, 0.188);
+}
+.logo_box p{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 145%;
+}
+.logo_one{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 255, 235, 1) 100%);
+  transform: rotate(-3deg);
+}
+.logo_two{
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(232, 255, 252, 1) 100%);
+transform: rotate(1deg);
+}
+.logo_three{
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(254, 234, 255, 1) 100%);
+transform: rotate(-2deg);
+position: relative;
+}
+.logo_four{
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 233, 233, 1) 100%);
+transform: rotate(0deg);
+}
+.logo_five{
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(213, 235, 255, 1) 100%);
+transform: rotate(3deg);
+}
+.logo_six{
+background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(223, 236, 255, 1) 100%);
+transform: rotate(1deg);
+}
+.thumb{
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 90px;
+  height: 90px;
+}
+
+footer{
+  text-align: center;
+  padding: 60px 0;
+}
+footer h2{
+  transform: rotate(3deg);
+}
+footer p{
+  margin: 20px;
+  transform: rotate(3deg);
+}
+footer a{
+  text-decoration: none;
+  transform: rotate(-3deg);
+  display: block;
+}
+.social_media{
+  width: 288px;
+  margin: auto;
+  margin-top: 60px;
+  transform: rotate(3deg);
+}
+.social_media ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+}
+.social_media ul li{
+  margin: 10px;
+
+}
+.social_media ul li a img{
+    width: 48px;
+}
