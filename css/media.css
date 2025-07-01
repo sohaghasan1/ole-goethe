@@ -1,0 +1,52 @@
+@media(max-width: 575px){
+    .navbar-brand{
+        font-size: 30px;
+    }
+    .banner h1{
+    font-size: 28px;
+    transform: rotate(0deg);
+}
+.banner p {
+    font-size: 20px;
+}
+.image_box {
+    margin-top: 40px;
+}
+.portfoli_box{
+    transform: rotate(0deg);
+}
+.gradiant_text{
+    transform: rotate(0deg);
+}
+.social_media{
+    transform: rotate(0deg);
+}
+ footer h2 {
+    font-size: 40px;
+}
+ footer p {
+    font-size: 20px;
+}
+.mentions_section{
+    padding: 60px 0;
+}
+.logo_box {
+    padding: 50px 45px;
+}
+.image_box {
+    height: 350px;
+}
+.portfoli_box {
+    padding: 24px;
+}
+.portfoli_box h2 {
+    font-size: 36px;
+   
+}
+}
+
+@media(max-width: 575px){
+    .logo_box {
+    padding: 40px 35px;
+}
+}

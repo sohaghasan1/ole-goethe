@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -61,7 +63,17 @@
                     <p>Previously at Correlate and NTNU</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/Ole Goethe.webp" class="img-fluid" alt="">
+                    <div class="image_box ">
+                        <div class="shape_1">
+                            <img src="images/shape-1.png" class="img-fluid" alt="">
+                        </div>
+                          <div class="shape_2">
+                            <img src="images/shape-2.png" class="img-fluid" alt="">
+                        </div>
+                          <div class="shape_3">
+                            <img src="images/ole goethe.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,50 +85,50 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6">
-                    <div class="portfoli_box box_item_one">
+                    <div class="portfoli_box box_item_one wow fadeInUp">
                         <h2 class="gradiant_text">Title</h2>
                         <p class="gradiant_text">I feel honored and grateful that the following platforms featured my
                             work. </p>
                         <a href="" class="btn btn-find-more gradiant_text">Find out more <i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <div class="image">
-                            <img src="images/first_item.png" class="img-fluid" alt="">
+                            <img src="images/item-one.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="portfoli_box box_item_two">
+                    <div class="portfoli_box box_item_two wow fadeInUp" data-wow-delay=".5s">
                         <h2 class="gradiant_text">Title</h2>
                         <p class="gradiant_text">I feel honored and grateful that the following platforms featured my
                             work. </p>
                         <a href="" class="btn btn-find-more gradiant_text">Find out more <i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <div class="image">
-                            <img src="images/second_item.png" class="img-fluid" alt="">
+                            <img src="images/item-two.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="portfoli_box box_item_three">
+                    <div class="portfoli_box box_item_three wow fadeInUp" data-wow-delay=".2s">
                         <h2 class="gradiant_text">Title</h2>
                         <p class="gradiant_text">I feel honored and grateful that the following platforms featured my
                             work. </p>
                         <a href="" class="btn btn-find-more gradiant_text">Find out more <i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <div class="image">
-                            <img src="images/third_item.png" class="img-fluid" alt="">
+                            <img src="images/item-three.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="portfoli_box box_item_four">
+                    <div class="portfoli_box box_item_four wow fadeInUp" data-wow-delay=".5s">
                         <h2 class="gradiant_text">Title</h2>
                         <p class="gradiant_text">I feel honored and grateful that the following platforms featured my
                             work. </p>
                         <a href="" class="btn btn-find-more gradiant_text">Find out more <i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <div class="image">
-                            <img src="images/fourth_item.png" class="img-fluid" alt="">
+                            <img src="images/item-four.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -202,6 +214,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/d2d598fe43.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('center-in-viewport');
+      }
+    });
+  }, {
+    threshold: 0.9 // Trigger when 50% of the element is visible
+  });
+
+  document.querySelectorAll('.shape_1, .shape_2, .shape_3').forEach(el => {
+    observer.observe(el);
+  });
+
+//   wow js 
+new WOW().init();
+</script>
+
+
 </body>
 
 </html>
